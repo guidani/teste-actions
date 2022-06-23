@@ -7,8 +7,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-    res.send("Sobre");
-})
+  res.send("Sobre");
+});
+
+app.get("/contact", (req, res) => {
+  res.send("contact page");
+});
 
 app.listen(PORT, () => {
   console.log(`Running at http://localhost:${PORT}`);
